@@ -1,6 +1,6 @@
 # ApiTracker.AspNetCore 
 
-[![Build status](https://ci.appveyor.com/api/projects/status/7oa50i7lt9fboq5m?svg=true)](https://ci.appveyor.com/project/seven1986/oauthlogin-aspnetcore)
+[![Build status](https://ci.appveyor.com/api/projects/status/p3dp82wh0t997oww?svg=true)](https://ci.appveyor.com/project/seven1986/apitracker-aspnetcore)
 
 PM> Install-Package ApiTracker.AspNetCore
 
