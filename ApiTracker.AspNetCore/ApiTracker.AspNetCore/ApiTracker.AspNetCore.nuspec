@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata minClientVersion="$version$">
+        <id>$id$</id>
+        <title>ApiTracker.AspNetCore</title>
+        <version>$version$</version>
+        <authors>Seven</authors>
+        <licenseUrl>https://github.com/seven1986/ApiTracker.AspNetCore/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/seven1986/ApiTracker.AspNetCore</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <developmentDependency>true</developmentDependency>
+        <description>$description$</description>
+        <language>zh-CN</language>
+       <tags>apiTracker elasticsearch log</tags>
+        <dependencies>
+            <dependency id="Newtonsoft.Json" version="10.0.3" />
+			<dependency id="Elasticsearch.Net" version="5.5.0" />
+			<dependency id="Microsoft.AspNetCore.Mvc" version="1.1.3" />
+			<dependency id="Microsoft.AspNetCore.Mvc.Abstractions" version="1.1.3" />
+			<dependency id="Microsoft.Extensions.Configuration" version="1.1.2" />
+			<dependency id="Microsoft.Extensions.Configuration.Abstractions" version="1.1.2" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Release\netcoreapp1.1\ApiTracker.AspNetCore.dll" target="lib\ApiTracker.AspNetCore.dll" />
+    </files>
+</package>
