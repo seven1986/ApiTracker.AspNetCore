@@ -1,11 +1,21 @@
-# ApiTracker.AspNetCore 
+# ApiTracker.AspNetCore Â [![Build status](https://ci.appveyor.com/api/projects/status/p3dp82wh0t997oww?svg=true)](https://ci.appveyor.com/project/seven1986/apitracker-aspnetcore) [![NuGet](https://img.shields.io/nuget/v/apitracker.aspnetcore.svg)](https://www.nuget.org/packages/apitracker.aspnetcore) 
 
-[![Build status](https://ci.appveyor.com/api/projects/status/o72ved788wpbabvk?svg=true)](https://ci.appveyor.com/project/seven1986/ApiTracker.AspNetCore)
+---
+
+If you are looking for the ASP.NET version please head to [ApiTracker](https://github.com/seven1986/ApiTracker) project.
+
+---
+
+NuGet downloads (ApiTracker) | NuGet downloads (ApiTracker.AspNetCore)
+--------------- | ---------------
+[![NuGet downloads ApiTracker](https://img.shields.io/nuget/dt/ApiTracker.svg)](https://www.nuget.org/packages/ApiTracker)|[![NuGet downloads ApiTracker.AspNetCore](https://img.shields.io/nuget/dt/ApiTracker.AspNetCore.svg)](https://www.nuget.org/packages/ApiTracker.AspNetCore)
 
 PM> Install-Package ApiTracker.AspNetCore
 
 
-### appsettings.json ÅäÖÃ
+
+
+### appsettings.json é…ç½®
 ```json
  "ApiTrackerSetting": {
     "ElasticConnection": "",
@@ -14,13 +24,13 @@ PM> Install-Package ApiTracker.AspNetCore
   }
 ```
 ```html
-ElasticConnection: elasticµØÖ·£¬ÀıÈç http://localhost:9200
-DocumentName:ÎÄµµÃû³Æ£¬Ä¬ÈÏapitracker
-TimeOut:Ğ´Èë³¬Ê±Ê±¼ä£¬µ¥Î»ºÁÃë£¬Ä¬ÈÏ500
+ElasticConnection: elasticåœ°å€ï¼Œä¾‹å¦‚ http://localhost:9200
+DocumentName:æ–‡æ¡£åç§°ï¼Œé»˜è®¤apitracker
+TimeOut:å†™å…¥è¶…æ—¶æ—¶é—´ï¼Œå•ä½æ¯«ç§’ï¼Œé»˜è®¤500
 ```
 
 
-### Startup.cs ÅäÖÃ
+### Startup.cs é…ç½®
 
 ```csharp
 // This method gets called by the runtime. Use this method to add services to the container.
@@ -29,7 +39,7 @@ public void ConfigureServices(IServiceCollection services)
     // Add framework services.
     services.AddMvc();
 
-    // ...ÆäËû
+    // ...å…¶ä»–
 
     services.Configure<ApiTrackerSetting>(Configuration.GetSection("ApiTrackerSetting"));
     services.AddScoped<ApiTracker.ApiTracker>();
@@ -37,7 +47,7 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 
-### API Controller ÅäÖÃ
+### API Controller é…ç½®
 
 ```csharp
     [Route("values")]
