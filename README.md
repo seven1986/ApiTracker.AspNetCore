@@ -2,8 +2,18 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/p3dp82wh0t997oww?svg=true)](https://ci.appveyor.com/project/seven1986/apitracker-aspnetcore)
 
+NuGet downloads (ApiTracker) | NuGet downloads (ApiTracker.AspNetCore)
+--------------- | ---------------
+[![NuGet downloads ApiTracker](https://img.shields.io/nuget/dt/ApiTracker.svg)](https://www.nuget.org/packages/ApiTracker)|[![NuGet downloads ApiTracker.AspNetCore](https://img.shields.io/nuget/dt/ApiTracker.AspNetCore.svg)](https://www.nuget.org/packages/ApiTracker.AspNetCore)
+
 PM> Install-Package ApiTracker.AspNetCore
 
+
+---
+
+If you are looking for the ASP.NET version please head to [ApiTracker](https://github.com/seven1986/ApiTracker) project.
+
+---
 
 ### appsettings.json 配置
 ```json
