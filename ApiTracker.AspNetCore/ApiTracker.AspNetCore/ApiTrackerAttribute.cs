@@ -34,7 +34,7 @@ namespace ApiTracker
 
             var log = new ApiTrackerEntity()
             {
-                StartTime = DateTime.UtcNow,
+                StartTime = DateTime.Now,
                 Action = Descriptor.ActionName,
                 Controller = Descriptor.ControllerName,
                 Method = Descriptor.MethodInfo.Name.ToLower(),
