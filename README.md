@@ -16,7 +16,7 @@ PM> Install-Package ApiTracker.AspNetCore
 
 
 ### appsettings.json 配置
-```json
+```javascript
  "ApiTrackerSetting": {
     "ElasticConnection": "", // elastic地址，例如 http://localhost:9200
     "DocumentName": "", // 文档名称，默认apitracker
