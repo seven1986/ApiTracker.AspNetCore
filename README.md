@@ -18,15 +18,10 @@ PM> Install-Package ApiTracker.AspNetCore
 ### appsettings.json 配置
 ```json
  "ApiTrackerSetting": {
-    "ElasticConnection": "",
-    "DocumentName": "",
-    "TimeOut": 500
+    "ElasticConnection": "", // elastic地址，例如 http://localhost:9200
+    "DocumentName": "", // 文档名称，默认apitracker
+    "TimeOut": 500 // 写入超时时间，单位毫秒，默认500
   }
-```
-```html
-ElasticConnection: elastic地址，例如 http://localhost:9200
-DocumentName:文档名称，默认apitracker
-TimeOut:写入超时时间，单位毫秒，默认500
 ```
 
 
